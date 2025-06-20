@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SIBGHA - Elevate Your Modesty</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+    header {
+      padding: 2rem;
+      text-align: center;
+      background-color: #111;
+      border-bottom: 1px solid #333;
+    }
+    header h1 {
+      font-size: 3rem;
+      letter-spacing: 2px;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #bbb;
+      margin-top: 0.5rem;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .product {
+      background-color: #111;
+      border: 1px solid #333;
+      border-radius: 12px;
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .product:hover {
+      transform: scale(1.03);
+    }
+    .product img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+    .product h3 {
+      margin: 1rem 0 0.5rem;
+      font-size: 1.2rem;
+      color: #fff;
+    }
+    .product p {
+      color: #aaa;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #666;
+      border-top: 1px solid #333;
+    }
+  </style>
+  <script>
+    console.log("Page is loading...");
+    document.addEventListener("DOMContentLoaded", function () {
+      console.log("DOM fully loaded and parsed");
+
+      const products = document.querySelectorAll(".product");
+      console.log(`Found ${products.length} products on the page.`);
+
+      products.forEach((product, index) => {
+        const title = product.querySelector("h3")?.innerText || "Unknown";
+        console.log(`Product ${index + 1}: ${title}`);
+      });
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <h1>SIBGHA</h1>
+    <p>ELEVATE YOUR MODESTY</p>
+  </header>
+
+  <section class="products">
+    <div class="product">
+      <img src="https://via.placeholder.com/400x300?text=Abaya" alt="Abaya" />
+      <h3>Elegant Abaya</h3>
+      <p>Timeless black with luxury flow and detail.</p>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/400x300?text=Long+Frock" alt="Long Frock" />
+      <h3>Luxury Long Frock</h3>
+      <p>Modest fashion meets high-end design.</p>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/400x300?text=Long+Skirt" alt="Long Skirt" />
+      <h3>Flowy Long Skirt</h3>
+      <p>Chic, modest, and perfect for any season.</p>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/400x300?text=Oversized+T-Shirt" alt="Oversize T-Shirt" />
+      <h3>Oversize T-Shirt</h3>
+      <p>Bold comfort with minimal branding.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 SIBGHA. All rights reserved.
+  </footer>
+</body>
+</html>
